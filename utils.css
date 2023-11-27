@@ -1,0 +1,118 @@
+.slideInLeft {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-shadow {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 -7px 11px hsl(0, 0%, 50%);
+}
+
+/* #leftSection{
+    opacity: 0;
+   transition: opacity 0.4s ease-in;
+}
+
+#rightSection{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+} */
+
+.opac {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.year {
+  font-size: 0.725rem;
+}
+
+.underl::before {
+  content: "";
+  width: 0;
+  height: 10%;
+  background-color: var(--first-color);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  animation: uwidth 0.7s forwards ease;
+}
+
+@keyframes uwidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.m4 {
+  margin-right: 4px;
+}
+
+.sign {
+  position: absolute;
+  z-index: 8;
+}
+
+.fontBlock {
+  background: hsla(14, 83%, 60%, 0.5);
+}
+
+.box {
+  height: 100%;
+  width: 26%;
+  position: relative;
+}
+
+
