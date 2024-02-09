@@ -115,4 +115,30 @@ a {
   position: relative;
 }
 
+.b-line{
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  margin: 8px 0;
+  margin-right: 54px;
+}
 
+.b-link{
+  color:hsl(0, 0%, 83%) !important;
+}
+
+.ph-line{
+  height: .5px;
+  width: 20px;
+  background-color: black;
+  margin-right: 10px;
+}
+
+.greyc{
+  color: rgb(109, 109, 109);
+}
+
+.ri-arrow-right-up-line{
+  color: white;
+  font-size: 1.4rem;
+}

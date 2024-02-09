@@ -17,6 +17,7 @@ const homeShadow = document.getElementById("home-shadow");
 const homeShadow1 = document.getElementById("home-shadow1");
 const blockShadow = document.querySelectorAll(".block-shadow")
 const aboutSection = document.getElementById("aboutSection");
+const projectSection = document.getElementById("projectsSection");
 const sign = document.querySelector(".sign");
 const btn2 = document.querySelector(".btn2");
 const btn3 = document.querySelector(".btn3");
@@ -24,6 +25,8 @@ const pic1 = document.querySelector(".pic1");
 const navShadow = document.querySelector(".nav-shadow")
 const service = document.getElementById("servicesSection")
 const card = document.querySelectorAll(".card")
+const bLine = document.querySelectorAll(".b-line")
+const box1 = document.querySelectorAll(".box1")
 
 
 var isLight = true;
@@ -69,6 +72,7 @@ darkMode.addEventListener("click", () => {
     homeShadow.style.backgroundColor = "#1e2020";  
     homeShadow1.style.backgroundColor = "#141414";  
     aboutSection.style.backgroundColor = "#1e1e1e";  
+    projectSection.style.backgroundColor = "#1e1e1e";  
     service.style.backgroundColor = "#141414"; 
     Array.from(card).forEach((e) => {
       e.style.backgroundColor = "#141414";
@@ -77,15 +81,32 @@ darkMode.addEventListener("click", () => {
     Array.from(navFont).forEach((e) => {
       e.style.color = "hsl(0, 0%, 87%)";
     });
+    Array.from(bLine).forEach((e) => {
+      e.style.backgroundColor = "hsl(0, 0%, 87%)";
+    });
     Array.from(navFont1).forEach((e) => {
       e.style.color = "black";
     });
     // navShadow.style.boxShadow = "0 0 9px hsl(0, 0%, 30%)"
+    Array.from(document.querySelectorAll("b-link")).forEach((e)=>{
+      e.style.color="hsl(0,0%,87%)"
+    })
+    Array.from(box1).forEach((e)=>{
+      e.addEventListener('mouseover', () =>{
+        this.style.bacgroundColor="black"
+      })
+    })
     isLight = false;
+
 
   } 
   
   else{
+    Array.from(box1).forEach((e)=>{
+      e.addEventListener('mousever', () =>{
+        this.style.bacgroundColor="white"
+      })
+    })
     navbar.style.backgroundColor = "hsl(0, 0%, 87%)";
     header.style.backgroundColor = "hsl(0, 0%, 87%)";
     Array.from(line).forEach((e) => {
@@ -107,6 +128,7 @@ darkMode.addEventListener("click", () => {
     btn3.style.borderColor = "black";
     pic1.style.borderColor = "white";
     aboutSection.style.backgroundColor = "#d4d4d4";
+    projectSection.style.backgroundColor = "#d4d4d4";
     service.style.backgroundColor = "hsl(0, 0%, 87%)";  
     Array.from(card).forEach((e) => {
       e.style.backgroundColor = "hsl(0, 0%, 87%)";
@@ -115,9 +137,13 @@ darkMode.addEventListener("click", () => {
     Array.from(navFont).forEach((e) => {
       e.style.color = "black";
     });
+    Array.from(bLine).forEach((e) => {
+      e.style.backgroundColor = "black";
+    });
     Array.from(navFont1).forEach((e) => {
       e.style.color = "hsl(0, 0%, 87%)";
     });
+    
     isLight = true;
   }
 });
@@ -160,6 +186,7 @@ EC.addEventListener('click', () => {
   ec.style.opacity = "1"
   skill.classList.remove("underl")
   EC.classList.add("underl")
+  console.log("hii")
 })
 
 
@@ -170,7 +197,7 @@ const leftSectionAbout = document.querySelector(".leftSectionAbout")
 
 window.addEventListener('scroll', () => {
   let scrollPosition = window.scrollY;
-  if(scrollPosition > 500){
+  if(scrollPosition > 300){
     leftSectionAbout.style.opacity = "1";
     leftSectionAbout.classList.add("slideInRight");
 
@@ -178,4 +205,42 @@ window.addEventListener('scroll', () => {
     rightSectionAbout.classList.add("slideInLeft");
   }
 })
+
+const burger = document.querySelector(".burger")
+
+var burgerState = true
+
+burger.addEventListener('click', () => {
+  if(burgerState){
+    document.querySelector(".rightnav").style.opacity = "1";
+    document.querySelector(".rightnav").style.display = "block";
+    document.querySelector(".rightnav").classList.add("rightNavSlideIn");
+    document.querySelector(".rightnav").classList.remove("rightNavSlideOut");
+
+    const bNav = document.querySelectorAll(".nav")
+    Array.from(bNav).forEach((e)=>{
+      // e.classList.remove(".abcd")
+      e.classList.add("b-link")
+    })
+    
+    burgerState=false;
+   
+  }
+  else{
+    document.querySelector(".rightnav").classList.remove("rightNavSlideIn");
+    document.querySelector(".rightnav").classList.add("rightNavSlideOut");
+    setTimeout(() => {
+      document.querySelector(".rightnav").style.opacity = "0";
+      document.querySelector(".rightnav").style.display = "none";
+    }, 400);
+    
+    burgerState = true
+  }
+  
+})
+
+// const bNav = document.querySelectorAll(".nav")
+// Array.from(bNav).forEach((e)=>{
+//   e.classList.add("b-nav")
+// })
 

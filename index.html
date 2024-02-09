@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Portfolio</title>
 
     <link rel="icon" href="img/favicon1.png" type="image/png" />
 
     <link rel="stylesheet" href="style.css" />
 
     <link rel="stylesheet" href="utils.css" />
+
+    <link rel="stylesheet" href="responsive.css" />
 
     <link
       rel="stylesheet"
@@ -30,12 +32,19 @@
         </div>
         <div class="rightnav">
           <ul>
-            <li><a href="#home" class="nav-link font-nav">Home</a></li>
-            <li><a href="#aboutSection" class="nav-link font-nav">About</a></li>
-            <li><a href="#" class="nav-link font-nav">Portfolio</a></li>
-            <li><a href="#" class="btn contact font-nav">Contact</a></li>
-            <li id="dark"><i class="ri-moon-line font-nav switch"></i></li>
+            <li><a href="#home" class="nav-link font-nav nav">Home</a></li>
+            <li>
+              <a href="#aboutSection" class="nav-link font-nav nav">About</a>
+            </li>
+            <li><a href="#" class="nav-link font-nav nav">Portfolio</a></li>
+            <li><a href="#" class="btn contact font-nav nav">Contact</a></li>
+            <li id="dark"><i class="ri-moon-line font-nav switch nav"></i></li>
           </ul>
+        </div>
+        <div class="burger">
+          <p class="b-line font-nav"></p>
+          <p class="b-line font-nav"></p>
+          <p class="b-line font-nav"></p>
         </div>
       </nav>
 
@@ -69,11 +78,7 @@
                 <div class="block-shadow" id="block-shadow"></div>
                 <div class="block"></div>
               </div>
-              <img
-                src="img/Snapchat-1717110414.jpg"
-                alt="person"
-                class="pic"
-              />
+              <img src="img/Snapchat-1717110414.jpg" alt="person" class="pic" />
               <div class="home__shadow" id="home-shadow"></div>
             </div>
             <div class="social">
@@ -145,14 +150,18 @@
 
             <div class="slides">
               <div class="slide main-skills font-nav" id="main-skills">
-                <ul class="">
+                <ul>
                   <li>Frontend-Development - HTML, CSS, Javascript, React</li>
                   <li>Backend-Development &nbsp- &nbsp NodeJs, ExpressJs</li>
                   <li>
                     Database &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                     &nbsp &nbsp &nbsp &nbsp - &nbsp MongoDB, Mongoose
                   </li>
-                  <li>Other &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- &nbsp C++, React Native</li>
+                  <li>
+                    Other &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp- &nbsp C++, React
+                    Native
+                  </li>
                 </ul>
               </div>
               <div class="slide e-c font-nav" id="e-c">
@@ -187,12 +196,12 @@
       <section class="services" id="servicesSection">
         <div class="box-main flex align-center justify-evenly flex-column">
           <h1 class="services__name font-nav">
-            Servics<span class="fontBlock">es</span>
+            Servic<span class="fontBlock">es</span>
           </h1>
           <div class="container flex justify-between align-center">
             <div class="box">
               <div class="card flex justify-center">
-                <div id="card" class="justify-evenly flex flex-column ">
+                <div id="card" class="justify-evenly flex flex-column">
                   <!-- <div class="gap"></div> -->
                   <div class="card-logo">
                     <i class="ri-code-box-line card-icon font-nav"></i>
@@ -210,7 +219,7 @@
 
             <div class="box">
               <div class="card flex justify-center">
-                <div id="card" class="justify-evenly flex flex-column ">
+                <div id="card" class="justify-evenly flex flex-column">
                   <!-- <div class="gap"></div> -->
                   <div class="card-logo">
                     <i class="ri-code-box-line card-icon font-nav"></i>
@@ -218,7 +227,8 @@
                   </div>
                   <h3 class="card-heading font-nav">Backend</h3>
                   <p class="card-para grey">
-                    Powerful backend coding for smooth, scalable, and seamless website performance and integration.
+                    Powerful backend coding for smooth, scalable, and seamless
+                    website performance and integration.
                   </p>
                 </div>
               </div>
@@ -227,7 +237,7 @@
 
             <div class="box">
               <div class="card flex justify-center">
-                <div id="card" class="justify-evenly flex flex-column ">
+                <div id="card" class="justify-evenly flex flex-column">
                   <!-- <div class="gap"></div> -->
                   <div class="card-logo">
                     <i class="ri-code-box-line card-icon font-nav"></i>
@@ -244,6 +254,220 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="projects" id="projectsSection">
+        <box class="box-main flex align-center justify-evenly flex-column">
+          <h1 class="services__name font-nav">
+            Projec<span class="fontBlock">ts</span>
+          </h1>
+          <div class="container1 flex justify-between align-center">
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/technology-791029_1280.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/pexels-pixabay-261579.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/laptop-2592785_1280.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/cup-of-coffee-1280537_1280.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="box1Main">
+                <div class="projectsImg_box">
+                  <img
+                    src="/img/keyboard-70506_1280.jpg"
+                    alt=""
+                    class="project_img"
+                  />
+                </div>
+                <div class="read_more">
+                  <a><i class="ri-arrow-right-up-line"></i></a>
+                </div>
+                <div class="project_details">
+                  
+                  <div class="project_type">
+                    <span class="ph-line"></span>
+                    <p>Website</p>
+                  </div>
+                  <div class="project_heading font-nav">
+                    <p>Note App</p>
+                  </div>
+                  <div class="project_desc">
+                    <p>
+                      Explore my sleek and responsive web development projects.
+                      Witness coding expertise in action. Dive in today!
+                    </p>
+                  </div>
+                  <div class="view">
+                    <i class="ri-github-line"><span class="greyc">View</span></i>
+                    <i class="ri-basketball-line"><span class="greyc">View</span></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </box>
       </section>
     </main>
 

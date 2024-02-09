@@ -1,0 +1,118 @@
+@media only screen and (max-width: 990px) {
+    .rightnav {
+      background: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 0;
+      height: 100vh;
+      max-width: 35%;
+      opacity: 0;
+      display: none;
+    }
+  
+    .rightNavSlideIn {
+      animation: rightNavSlideAnimIn 0.5s ease-in;
+    }
+    .rightNavSlideOut {
+      animation: rightNavSlideAnimOut 0.5s ease-out;
+    }
+  
+    @keyframes rightNavSlideAnimIn {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes rightNavSlideAnimOut {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 0%;
+      }
+    }
+  
+    .burger {
+      opacity: 1;
+      display: block;
+    }
+  
+    .box-main {
+      width: 90%;
+    }
+  
+    .leftSection {
+      max-width: 45%;
+    }
+  
+    .header__para {
+      font-size: 1.25rem;
+      margin-bottom: 63px;
+    }
+    .header__name {
+      font-size: 3.4rem;
+      margin-bottom: 50px;
+    }
+  
+    .header__scroll {
+      margin-bottom: -27px;
+    }
+    .rightSection {
+      max-width: 47%;
+    }
+  
+    
+    .rightnav ul {
+      flex-direction: column;
+    }
+  
+    .rightnav ul li {
+      margin: 23px;
+    }
+    #dark {
+      color: hsl(0, 0%, 83%);
+    }
+    .person {
+      height: 65%;
+    }
+  
+    .person1 {
+      height: 58%;
+      width: 85%;
+    }
+  
+    .rightSectionAbout {
+      max-width: 50%;
+    }
+  
+    .slides {
+      font-size: 0.83rem;
+    }
+  
+    .about__para {
+      font-size: 1.25rem;
+    }
+  
+    .aboutList li a {
+      font-size: 0.95rem;
+    }
+  
+    .about-contact {
+      margin-top: 45px;
+    }
+  
+    .sign1 {
+      right: -23px;
+    }
+  
+    .block1 {
+      right: 9%;
+      bottom: 21%;
+    }
+  
+    .home-block1 {
+      right: 3%;
+    }
+  }
+  

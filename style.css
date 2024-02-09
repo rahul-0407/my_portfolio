@@ -22,6 +22,7 @@ main {
   width: 100%;
   height: 100%;
   font-family: var(--body-font);
+  overflow: hidden;
 }
 
 .navbar {
@@ -36,8 +37,6 @@ main {
   transition: box-shadow 0.3s ease;
   z-index: 100;
   opacity: 0;
-
-  transition: background-color 0.4s ease-in;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -136,7 +135,8 @@ main {
 
 #home,
 #aboutSection,
-#servicesSection {
+#servicesSection,
+#navbar {
   transition: background-color 0.4s ease-in;
 }
 
@@ -360,7 +360,7 @@ main {
   height: 10%;
   width: 18%;
   right: 19%;
-  /* background: red; */
+  background: red;
   bottom: 18%;
 }
 
@@ -484,6 +484,7 @@ font-size: 1.425rem;
 .about-contact{
   display: flex;
   margin-left: 27px;
+  margin-top: 18px;
 }
 
 .social-linkin{
@@ -580,6 +581,98 @@ height: 44%;
   margin-top: 1rem;
 }
 
+.burger{
+  opacity: 0;
+  display: none;
+}
+
+.projects{
+  height: 130vh;
+  width: 100vw;
+  background-color: #d4d4d4;
+}
+
+.container1{
+  width: 100%;
+  height: 85%;
+  /* background-color: red; */
+  flex-wrap: wrap;
+}
+
+.box1{
+  background-color: transparent;
+  width: 32%;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease .5s background-color;
+}
+
+
+
+.box1Main{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.projectsImg_box{
+  width: 100%;
+  height: 55%;
+}
+
+.project_img{
+  width: 100%;
+  height: 100%;
+}
+
+.project_details{
+  height: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.read_more{
+  position: absolute;
+    top: 48%;
+    right: 5%;
+    width: 54px;
+    height: 54px;
+    background-color: black;
+    display: grid;
+    place-content: center;
+    transition: ease .4s background-color;
+}
+
+.project_type{
+  display: flex;
+  align-items: center;
+  color: rgb(109, 109, 109);
+  
+}
+
+.project_heading{
+  font-size: 1.225rem;
+  font-weight: 700;
+}
+
+.project_desc{
+  color: rgb(109, 109, 109);
+}
+
+.view{
+  word-spacing: 18px;
+}
+
+.read_more:hover{
+  background-color: var(--first-color);
+}
 
 
 
