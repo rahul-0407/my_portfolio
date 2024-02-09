@@ -91,22 +91,12 @@ darkMode.addEventListener("click", () => {
     Array.from(document.querySelectorAll("b-link")).forEach((e)=>{
       e.style.color="hsl(0,0%,87%)"
     })
-    Array.from(box1).forEach((e)=>{
-      e.addEventListener('mouseover', () =>{
-        this.style.bacgroundColor="black"
-      })
-    })
     isLight = false;
 
 
   } 
   
   else{
-    Array.from(box1).forEach((e)=>{
-      e.addEventListener('mousever', () =>{
-        this.style.bacgroundColor="white"
-      })
-    })
     navbar.style.backgroundColor = "hsl(0, 0%, 87%)";
     header.style.backgroundColor = "hsl(0, 0%, 87%)";
     Array.from(line).forEach((e) => {

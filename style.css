@@ -609,6 +609,10 @@ height: 44%;
   transition: ease .5s background-color;
 }
 
+.box1:hover{
+  background-color: white;
+}
+
 
 
 .box1Main{
